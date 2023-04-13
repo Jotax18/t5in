@@ -75,9 +75,12 @@ public class FrmListado extends JFrame {
 		lblNewLabel.setBounds(20, 33, 102, 14);
 		contentPane.add(lblNewLabel);
 		
-		JTextArea txtSalida = new JTextArea();
-		txtSalida.setBounds(20, 73, 392, 226);
-		contentPane.add(txtSalida);
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(10, 171, 414, 143);
+		contentPane.add(scrollPane);
+		
+		txtSalida = new JTextArea();
+		scrollPane.setViewportView(txtSalida);
 		
 	}
 	
